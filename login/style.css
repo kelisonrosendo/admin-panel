@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif !important;
+  background: #424a5d;
+  color: #424a5d;
+}
+
+.box-login {
+  width: 360px;
+  border-radius: 5px;
+  background: #ffffff;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(122, 122, 122, 0.2),
+    0 5px 5px 0 rgba(122, 122, 122, 0.24);
+}
+
+.box-login .header-box {
+  border-radius: 5px 5px 0 0;
+  height: 40px;
+  background: #62d1e2;
+  width: 100%;
+}
+
+.box-login form {
+  padding: 40px;
+}
+
+.box-login form img {
+  width: 200px;
+}
+
+.box-login form h3 {
+  text-transform: uppercase;
+  font-weight: normal;
+  margin-bottom: 10px;
+  padding: 0 0 15px 0;
+  font-size: 20px;
+}
+
+.box-login form input,
+button {
+  background: #f2f2f2;
+  outline: 0;
+  width: 100%;
+  border: 0;
+  padding: 18px;
+  font-size: 13px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #424a5d;
+  border-radius: 4px;
+}
+
+.box-login form input::placeholder {
+  color: #aeb2b7;
+}
+
+.box-login input.input-user {
+  background: #f2f2f2 url("../assets/images/avatar.svg") no-repeat 250px center;
+  background-size: 15px 15px;
+}
+
+.box-login input.input-password {
+  background: #f2f2f2 url("../assets/images/padlock.svg") no-repeat 250px center;
+  background-size: 15px 15px;
+}
+
+.box-login form button {
+  text-transform: uppercase;
+  background: #68dff0;
+  color: #424a5d;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.box-login form button:hover {
+  background: #62d1e2;
+}
+
+.box-login form p {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 422px) {
+  .box-login {
+    width: 100%;
+    box-shadow: none;
+  }
+
+  body {
+    background: #ffffff;
+  }
+
+  .box-login input.input-user,
+  .box-login input.input-password {
+    background: #f2f2f2;
+  }
+
+  .header-box {
+    border-radius: 0 !important;
+    margin: 0 40px;
+    height: 14px !important;
+    background: #62d1e2;
+    width: initial !important;
+  }
+}

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Template</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/font-awesome/all.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <input type="checkbox" id="app-menu-toggle" />
+
+      <div class="app-sidebar">
+        <div class="app-profile">
+          <img src="../assets/images/avatar.jpg" alt="avatar" />
+          <p>User Name</p>
+        </div>
+
+        <div class="app-search">
+          <input type="text" placeholder="search" />
+        </div>
+
+        <ul class="app-sidebar-menu">
+          <li class="app-sub-menu">
+            <a href="">
+              <i class="fa fa-home"></i>
+              <span>Home Page</span>
+            </a>
+          </li>
+
+          <li class="app-sub-menu">
+            <a href="" class="app-sub-icon">
+              <i class="fa fa-desktop"></i>
+              <span>Menu Dropdown</span>
+
+              <label for="drop-1" class="app-nav-toggle-label"> &nbsp; </label>
+            </a>
+
+            <input type="checkbox" class="app-nav-toggle" id="drop-1" />
+
+            <ul class="app-sub">
+              <li>
+                <a href=""> <i class="fa fa-angle-right"></i> Sub 01 </a>
+              </li>
+              <li>
+                <a href=""> <i class="fa fa-angle-right"></i> Sub 02 </a>
+              </li>
+              <li>
+                <a href=""> <i class="fa fa-angle-right"></i> Sub 03 </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="app-sub-menu">
+            <a href="" class="app-sub-icon">
+              <i class="fa fa-desktop"></i>
+              <span>Menu Dropdown</span>
+
+              <label for="drop-2" class="app-nav-toggle-label"> &nbsp; </label>
+            </a>
+
+            <input type="checkbox" class="app-nav-toggle" id="drop-2" />
+
+            <ul class="app-sub">
+              <li>
+                <a href=""> <i class="fa fa-angle-right"></i> Sub 01 </a>
+              </li>
+              <li>
+                <a href=""> <i class="fa fa-angle-right"></i> Sub 02 </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="app-content">
+        <div class="app-nav">
+          <ul>
+            <li>
+              <label for="app-menu-toggle" class="app-btn-menu">
+                <i class="fa fa-bars"></i>
+              </label>
+            </li>
+            <li><p>system name</p></li>
+          </ul>
+          <ul>
+            <li>
+              <button><i class="fa fa-power-off"></i>logout</button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="app-main">
+          <div class="row">
+            <div class="col-lg-12">
+              <header>
+                <h1>Lorem Ipsum</h1>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry.
+                </p>
+              </header>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="alert alert-info">column 1</div>
+            </div>
+            <div class="col-lg-6">
+              <div class="alert alert-info">column 2</div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-3 form-group">
+              <button
+                id="btnGroupDrop1"
+                type="button"
+                class="btn btn-secondary form-control dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dropdown Actions
+              </button>
+              <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                <a class="dropdown-item" href="">
+                  <i class="fas fa-sync fa-fw"></i>
+                  Action 1
+                </a>
+                <a class="dropdown-item" href="">
+                  <i class="fas fa-dumbbell fa-fw"></i> Action 2
+                </a>
+                <a class="dropdown-item" href="">
+                  <i class="fas fa-user-check fa-fw"></i> Action 3
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-9 form-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="your search here"
+              />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th width="5%">#ID</th>
+                      <th>PRODUCT</th>
+                      <th>CATEGORY</th>
+                      <th>PRICE</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="link-tr">
+                      <td>001</td>
+                      <td>PEN</td>
+                      <td>OFFICE MATERIAL</td>
+                      <td>$0.50</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-lg-12">
+              <!-- Button trigger modal -->
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalCenteredScrollable"
+              >
+                Vertically centered scrollable modal
+              </button>
+            </div>
+          </div>
+          
+          <div
+            id="exampleModalCenteredScrollable"
+            class="modal fade"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenteredScrollableTitle"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl"
+              role="document"
+            >
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5
+                    class="modal-title"
+                    id="exampleModalCenteredScrollableTitle"
+                  >
+                    Modal title
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Cras mattis consectetur purus sit amet fermentum. Cras justo
+                    odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
+                    risus, porta ac consectetur ac, vestibulum at eros.
+                  </p>
+                  <p>
+                    Praesent commodo cursus magna, vel scelerisque nisl
+                    consectetur et. Vivamus sagittis lacus vel augue laoreet
+                    rutrum faucibus dolor auctor.
+                  </p>
+                  <p>
+                    Aenean lacinia bibendum nulla sed consectetur. Praesent
+                    commodo cursus magna, vel scelerisque nisl consectetur et.
+                    Donec sed odio dui. Donec ullamcorper nulla non metus auctor
+                    fringilla.
+                  </p>
+                  <p>
+                    Cras mattis consectetur purus sit amet fermentum. Cras justo
+                    odio, dapibus ac facilisis in, egestas eget quam. Morbi leo
+                    risus, porta ac consectetur ac, vestibulum at eros.
+                  </p>
+                  <p>
+                    Praesent commodo cursus magna, vel scelerisque nisl
+                    consectetur et. Vivamus sagittis lacus vel augue laoreet
+                    rutrum faucibus dolor auctor.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                  <button type="button" class="btn btn-primary">
+                    Save changes
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-lg-12">
+              <div class="accordion" id="accordionExample">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseOne"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        Collapsible Group Item #1
+                      </button>
+                    </h2>
+                  </div>
+
+                  <div
+                    id="collapseOne"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        Collapsible Group Item #2
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseTwo"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                      <button
+                        class="btn btn-link collapsed"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        Collapsible Group Item #3
+                      </button>
+                    </h2>
+                  </div>
+                  <div
+                    id="collapseThree"
+                    class="collapse"
+                    aria-labelledby="headingThree"
+                    data-parent="#accordionExample"
+                  >
+                    <div class="card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life
+                      accusamus terry richardson ad squid. 3 wolf moon officia
+                      aute, non cupidatat skateboard dolor brunch. Food truck
+                      quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
+                      tempor, sunt aliqua put a bird on it squid single-origin
+                      coffee nulla assumenda shoreditch et. Nihil anim keffiyeh
+                      helvetica, craft beer labore wes anderson cred nesciunt
+                      sapiente ea proident. Ad vegan excepteur butcher vice
+                      lomo. Leggings occaecat craft beer farm-to-table, raw
+                      denim aesthetic synth nesciunt you probably haven't heard
+                      of them accusamus labore sustainable VHS.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    id="home-tab"
+                    data-toggle="tab"
+                    href="#home"
+                    role="tab"
+                    aria-controls="home"
+                    aria-selected="true"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="profile-tab"
+                    data-toggle="tab"
+                    href="#profile"
+                    role="tab"
+                    aria-controls="profile"
+                    aria-selected="false"
+                    >Profile</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="contact-tab"
+                    data-toggle="tab"
+                    href="#contact"
+                    role="tab"
+                    aria-controls="contact"
+                    aria-selected="false"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="home"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                >
+                  tab 1
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="profile"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                >
+                  tab 2
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="contact"
+                  role="tabpanel"
+                  aria-labelledby="contact-tab"
+                >
+                  tab 3
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../assets/bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="../assets/bootstrap/js/popper.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>
